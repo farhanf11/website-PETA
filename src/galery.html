@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <title>Galeri</title>
+</head>
+<body>
+    <!--navbar-->
+    <nav class="bg-white shadow-lg">
+        <div class="px-4">
+            <div class="flex justify-between">
+                <div>
+                    <img class="h-10 mt-2 mr-4" src="/website-PETA/images/logoPeta.png" alt="">
+                </div>
+                <div class="hidden md:flex justify-arround">
+                    <a href="index.html" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">Beranda</a>
+                    <a href="./tentang-peta.html" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">Tentang PETA</a>
+                    <a href="./kasus-TBC.html" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">TBC</a>
+                    <a href="./galery.html" class="block text-sm px-2 py-4 text-white bg-blue-500 font-semibold">Galeri</a>
+                    <a href="./artikel.html" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">Artikel</a>
+                    <a href="./kontak.html" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">Kontak</a>
+                    <a href="./penjualan.html" class="block py-4 px-2 font-medium text-green-500 rounded hover:bg-green-500 hover:text-white transition duration-300">Penjualan</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                  <button class="outline-none mobile-menu-button right-0">
+                    <svg class=" w-6 h-6 text-gray-500 hover:text-blue-500 "
+                        x-show="!showMenu"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                    >
+                        <path d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                  </button>
+                </div>
+            </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="hidden mobile-menu">
+            <ul class="">
+                <li><a href="index.html" class="block text-sm px-2 py-4 text-white bg-blue-500 font-semibold">Beranda</a></li>
+                <li><a href="./tentang-peta.html" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">Tentang PETA</a></li>
+                <li><a href="./kasus-TBC.html" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">TBC</a></li>
+                <li><a href="./galery.html" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">Galeri</a></li>
+                <li><a href="./artikel.html" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">Artikel</a></li>
+                <li><a href="./kontak.html" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">Kontak</a></li>
+                <li><a href="./penjualan.html" class="block py-4 px-2 font-medium text-green-500 rounded hover:bg-green-500 hover:text-white transition duration-300">Penjualan</a></li>
+            </ul>
+        </div>
+        <script>
+            const btn = document.querySelector("button.mobile-menu-button");
+            const menu = document.querySelector(".mobile-menu");
+
+            btn.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+            });
+        </script>
+    </nav>  
+    <!--banner-->
+    <div class="flex justify-around px-10 py-10 border-b">
+        <img src="/website-PETA/images/bg-galery.png" alt="">
+    </div>
+    <!--galery-->
+    <div class="flex justify-around gap-3 px-5 py-10">
+        <div>
+            <img src="/website-PETA/images/galery-1.png" class="w-36 md:w-48 lg:w-60" alt="">
+        </div>
+        <div>
+            <img src="/website-PETA/images/galery-1.png" class="w-36 md:w-48 lg:w-60" alt="">
+        </div>
+        <div>
+            <img src="/website-PETA/images/galery-1.png" class="w-36 md:w-48 lg:w-60" alt="">
+        </div>
+    </div>
+    <div class="flex justify-around gap-3 px-5 py-10">
+        <div>
+            <img src="/website-PETA/images/galery-1.png" class="w-36 md:w-48 lg:w-60" alt="">
+        </div>
+        <div>
+            <img src="/website-PETA/images/galery-1.png" class="w-36 md:w-48 lg:w-60" alt="">
+        </div>
+        <div>
+            <img src="/website-PETA/images/galery-1.png" class="w-36 md:w-48 lg:w-60" alt="">
+        </div>
+    </div>
+    <div class="flex justify-around gap-3 px-5 py-10">
+        <div>
+            <img src="/website-PETA/images/galery-1.png" class="w-36 md:w-48 lg:w-60" alt="">
+        </div>
+        <div>
+            <img src="/website-PETA/images/galery-1.png" class="w-36 md:w-48 lg:w-60" alt="">
+        </div>
+        <div>
+            <img src="/website-PETA/images/galery-1.png" class="w-36 md:w-48 lg:w-60" alt="">
+        </div>
+    </div>
+    <!--slide-->
+    <div class="">
+        12334567
+    </div>
+    <footer class="bg-gray-200 py-7 md:flex justify-around">
+        <div class="flex gap-2 justify-around">
+            <img src="/website-PETA/images/ig.png" class="w-5 md:h-6 md:pt-0" alt="">
+            <img src="/website-PETA/images/tiktok.png" class="w-5 md:h-6 md:pt-0" alt="">
+            <img src="/website-PETA/images/twiter.png" class="w-5 md:h-6 md:pt-0" alt="">
+            <img src="/website-PETA/images/linkedin.png" class="w-5 md:h-6 md:pt-0" alt="">
+            <img src="/website-PETA/images/fb.png" class="w-5 md:h-6 md:pt-0" alt="">
+            <img src="/website-PETA/images/youtube.png" class="w-5 md:h-6 md:pt-0" alt="">
+        </div>
+        <p class="pt-4 md:pt-0 flex justify-around text-sm md:text-lg">@copyright 2022 Pejuang Tanggung PETA TB-RO</p>
+        <div class="flex justify-center gap-2">
+            <img src="/website-PETA/images/indo-icon.png" class="w-5" alt="">
+            <p>Indonesia</p>
+        </div>
+    </footer>
+</body>
+</html>
