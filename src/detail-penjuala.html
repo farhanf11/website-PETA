@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <title>Penjualan</title>
+</head>
+<body>
+    <!--navbar-->
+    <nav class="bg-white shadow-lg">
+        <div class="px-4">
+            <div class="flex justify-between">
+                <div>
+                    <img class="h-10 mt-2 mr-4" src="/website-PETA/images/logoPeta.png" alt="">
+                </div>
+                <div class="hidden md:flex justify-arround">
+                    <a href="index.html" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">Beranda</a>
+                    <a href="./tentang-peta.html" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">Tentang PETA</a>
+                    <a href="./kasus-TBC.html" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">TBC</a>
+                    <a href="./galery.html" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">Galeri</a>
+                    <a href="./artikel.html" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">Artikel</a>
+                    <a href="./kontak.html" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">Kontak</a>
+                    <a href="./penjualan.html" class="block py-4 px-2 font-semibold rounded bg-cyan-400 text-white transition duration-300">Penjualan</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                  <button class="outline-none mobile-menu-button right-0">
+                    <svg class=" w-6 h-6 text-gray-500 hover:text-blue-500 "
+                        x-show="!showMenu"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                    >
+                        <path d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                  </button>
+                </div>
+            </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="hidden mobile-menu">
+            <ul class="">
+                <li><a href="index.html" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">Beranda</a></li>
+                <li><a href="./tentang-peta.html" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">Tentang PETA</a></li>
+                <li><a href="./kasus-TBC.html" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">TBC</a></li>
+                <li><a href="./galery.html" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">Galeri</a></li>
+                <li><a href="./artikel.html" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">Artikel</a></li>
+                <li><a href="./kontak.html" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">Kontak</a></li>
+                <li><a href="./penjualan.html" class="block py-4 px-2 font-medium rounded bg-green-500 text-white">Penjualan</a></li>
+            </ul>
+        </div>
+        <script>
+            const btn = document.querySelector("button.mobile-menu-button");
+            const menu = document.querySelector(".mobile-menu");
+
+            btn.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+            });
+        </script>
+    </nav> 
+    <!--penjualan 2-->
+    <div class="md:flex md:mx-24 mx-10 gap-5 border-b pb-10">
+        <img src="/website-PETA/images/detail-jualan1.png" class="h-60 md:h-80 mt-10" alt="">
+            
+        <div class="md:ml-5">
+            <p class="md:text-center font-bold text-2xl md:text-xl lg:text-3xl lg:mt-10 md:mt-10 ">Nasi Goreng Kambing</p>
+            <div class="flex mt-3 gap-2 font-semibold text-lg">
+                <img src="/website-PETA/images/user.png" class="w-8 md:h-11" alt="">
+                <p>Ilham Ramadhan</p>
+                <p>,</p>
+                <p>kemanggisan</p>
+            </div>
+            <div class="flex font-semibold text-2xl mt-2 border-b border-gray pb-5">
+                <p>Rp.</p>
+                <!--harga-->
+                <p>25.000</p>
+            </div>
+
+            <!-- desc desktop -->
+            <div class="hidden md:flex justify-between">
+                <div class="flex font-semibold text-xl mt-2 border-b border-gray">
+                    <p class="border-b border-blue-500 pb-2">Deskripsi</p>
+                </div>
+                <div class="flex gap-3">
+                    <p class="text-xl font-semibold mt-2">kontak penjual</p>
+                    <a href="#">
+                        <img src="/website-PETA/images/wa.png" class="h-10 py-2 md:h-11 md:py-1" alt="">
+                    </a>
+                    <a href="">
+                        <img src="/website-PETA/images/Instagram.png" class="h-10 py-2 md:h-11 md:py-1" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="/website-PETA/images/Facebook.png" class="h-10 py-2 md:h-11 md:py-1" alt="">
+                    </a>
+                </div>
+            </div>
+            <!-- deskripsi mobile -->
+            <div class="md:hidden">
+                <div class="flex gap-3">
+                    <p class="text-xl font-semibold mt-2">kontak penjual</p>
+                    <a href="#">
+                        <img src="/website-PETA/images/wa.png" class="h-10 py-2 md:h-11 md:py-1" alt="">
+                    </a>
+                    <a href="">
+                        <img src="/website-PETA/images/Instagram.png" class="h-10 py-2 md:h-11 md:py-1" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="/website-PETA/images/Facebook.png" class="h-10 py-2 md:h-11 md:py-1" alt="">
+                    </a>
+                </div>
+                <div class="flex font-semibold text-xl mt-2 border-b border-gray">
+                    <p class="border-b border-blue-500 pb-2">Deskripsi</p>
+                </div>
+            </div>
+            
+            <p class="text-left font-semibold md:text-lg md:mt-4 lg:mt-8 pr-5">
+                Lorem ipsum is a placeholder 
+                text commonly used to demonstrate the visual form of a document 
+                or a typeface without relying on meaningful content.
+                Lorem ipsum is a placeholder 
+                text commonly used to demonstrate the visual form of a document 
+                or a typeface without relying on meaningful content.
+                Lorem ipsum is a placeholder 
+                text commonly used to demonstrate the visual form of a document 
+                or a typeface without relying on meaningful content.
+            </p>
+        </div>
+    </div>
+
+    <!-- lainnya desktop -->
+    <div class="hidden md:flex justify-around gap-4 px-10 py-10">
+        <div class="w-60 rounded overflow-hidden shadow-lg bg-gradient-to-b from-cyan-500 to-white">
+            <img class="h-48" src="/website-PETA/images/penjualan2.png">
+            <div class="px-2 py-4">
+              <div class="font-bold text-lg mb-2">The Coldest Sunset</div>
+              <div class="font-bold text-lg mb-2">RP 35.000</div>
+            </div>
+        </div>
+        <div class="w-60 rounded overflow-hidden shadow-lg bg-gradient-to-b from-cyan-500 to-white">
+            <img class="h-48" src="/website-PETA/images/penjualan2.png">
+            <div class="px-2 py-4">
+              <div class="font-bold text-lg mb-5">The Coldest Sunset</div>
+              <div class="font-bold text-lg mb-2">RP 35.000</div>
+            </div>
+        </div>
+        <div class="w-60 rounded overflow-hidden shadow-lg bg-gradient-to-b from-cyan-500 to-white">
+            <img class="h-48" src="/website-PETA/images/penjualan2.png">
+            <div class="px-2 py-4">
+              <div class="font-bold text-lg mb-5">The Coldest Sunset</div>
+              <div class="font-bold text-lg mb-2">RP 35.000</div>
+            </div>
+        </div>
+        <div class="w-60 rounded overflow-hidden shadow-lg bg-gradient-to-b from-cyan-500 to-white">
+            <img class="h-48" src="/website-PETA/images/penjualan2.png">
+            <div class="px-2 py-4">
+              <div class="font-bold text-lg mb-5">The Coldest Sunset</div>
+              <div class="font-bold text-lg mb-2">RP 35.000</div>
+            </div>
+        </div>
+    </div>
+    <div class="hidden md:flex justify-around gap-4 px-10 pb-10">
+        <div class="w-60 rounded overflow-hidden shadow-lg bg-gradient-to-b from-cyan-500 to-white">
+            <img class="h-48" src="/website-PETA/images/penjualan3.png">
+            <div class="px-2 py-4">
+              <div class="font-bold text-lg mb-2">The Coldest Sunset</div>
+              <div class="font-bold text-lg mb-2">RP 35.000</div>
+            </div>
+        </div>
+        <div class="w-60 rounded overflow-hidden shadow-lg bg-gradient-to-b from-cyan-500 to-white">
+            <img class="h-48" src="/website-PETA/images/penjualan3.png">
+            <div class="px-2 py-4">
+              <div class="font-bold text-lg mb-5">The Coldest Sunset</div>
+              <div class="font-bold text-lg mb-2">RP 35.000</div>
+            </div>
+        </div>
+        <div class="w-60 rounded overflow-hidden shadow-lg bg-gradient-to-b from-cyan-500 to-white">
+            <img class="h-48" src="/website-PETA/images/penjualan3.png">
+            <div class="px-2 py-4">
+              <div class="font-bold text-lg mb-5">The Coldest Sunset</div>
+              <div class="font-bold text-lg mb-2">RP 35.000</div>
+            </div>
+        </div>
+        <div class="w-60 rounded overflow-hidden shadow-lg bg-gradient-to-b from-cyan-500 to-white">
+            <img class="h-48" src="/website-PETA/images/penjualan3.png">
+            <div class="px-2 py-4">
+              <div class="font-bold text-lg mb-5">The Coldest Sunset</div>
+              <div class="font-bold text-lg mb-2">RP 35.000</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- lainnya mobile -->
+        <div class="flex justify-around gap-4 px-10 py-10">
+            <div class="w-60 rounded overflow-hidden shadow-lg bg-gradient-to-b from-cyan-500 to-white">
+                <img class="h-36 md:h-48" src="/website-PETA/images/penjualan2.png">
+                <div class="px-2 py-4">
+                  <div class="font-bold md:text-lg mb-2">The Coldest Sunset</div>
+                  <div class="font-bold md:text-lg mb-2">RP 35.000</div>
+                </div>
+            </div>
+            <div class="w-60 rounded overflow-hidden shadow-lg bg-gradient-to-b from-cyan-500 to-white">
+                <img class="h-36 md:h-48" src="/website-PETA/images/penjualan2.png">
+                <div class="px-2 py-4">
+                  <div class="font-bold md:text-lg mb-5">The Coldest Sunset</div>
+                  <div class="font-bold md:text-lg mb-2">RP 35.000</div>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-around gap-4 px-10 pb-10">
+            <div class="w-60 rounded overflow-hidden shadow-lg bg-gradient-to-b from-cyan-500 to-white">
+                <img class="h-36 md:h-48" src="/website-PETA/images/penjualan3.png">
+                <div class="px-2 py-4">
+                  <div class="font-bold md:text-lg mb-2">The Coldest Sunset</div>
+                  <div class="font-bold md:text-lg mb-2">RP 35.000</div>
+                </div>
+            </div>
+            <div class="w-60 rounded overflow-hidden shadow-lg bg-gradient-to-b from-cyan-500 to-white">
+                <img class="h-36 md:h-48" src="/website-PETA/images/penjualan3.png">
+                <div class="px-2 py-4">
+                  <div class="font-bold md:text-lg mb-5">The Coldest Sunset</div>
+                  <div class="font-bold md:text-lg mb-2">RP 35.000</div>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-around gap-4 px-10 pb-10">
+            <div class="w-60 rounded overflow-hidden shadow-lg bg-gradient-to-b from-cyan-500 to-white">
+                <img class="h-36 md:h-48" src="/website-PETA/images/penjualan1.png">
+                <div class="px-2 py-4">
+                  <div class="font-bold md:text-lg mb-2">The Coldest Sunset</div>
+                  <div class="font-bold md:text-lg mb-2">RP 35.000</div>
+                </div>
+            </div>
+            <div class="w-60 rounded overflow-hidden shadow-lg bg-gradient-to-b from-cyan-500 to-white">
+                <img class="h-36 md:h-48" src="/website-PETA/images/penjualan1.png">
+                <div class="px-2 py-4">
+                  <div class="font-bold md:text-lg mb-5">The Coldest Sunset</div>
+                  <div class="font-bold md:text-lg mb-2">RP 35.000</div>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-around gap-4 px-10 pb-10">
+            <div class="w-60 rounded overflow-hidden shadow-lg bg-gradient-to-b from-cyan-500 to-white">
+                <img class="h-36 md:h-48" src="/website-PETA/images/detail-jualan1.png">
+                <div class="px-2 py-4">
+                  <div class="font-bold md:text-lg mb-2">The Coldest Sunset</div>
+                  <div class="font-bold md:text-lg mb-2">RP 35.000</div>
+                </div>
+            </div>
+            <div class="w-60 rounded overflow-hidden shadow-lg bg-gradient-to-b from-cyan-500 to-white">
+                <img class="h-36 md:h-48" src="/website-PETA/images/detail-jualan1.png">
+                <div class="px-2 py-4">
+                  <div class="font-bold md:text-lg mb-5">The Coldest Sunset</div>
+                  <div class="font-bold md:text-lg mb-2">RP 35.000</div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

@@ -48,13 +48,13 @@
         <!-- mobile menu -->
         <div class="hidden mobile-menu">
             <ul class="">
-                <li><a href="index.html" class="block text-sm px-2 py-4 text-white bg-blue-500 font-semibold">Beranda</a></li>
+                <li><a href="index.html" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">Beranda</a></li>
                 <li><a href="./tentang-peta.html" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">Tentang PETA</a></li>
                 <li><a href="./kasus-TBC.html" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">TBC</a></li>
                 <li><a href="./galery.html" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">Galeri</a></li>
                 <li><a href="./artikel.html" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">Artikel</a></li>
                 <li><a href="./kontak.html" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">Kontak</a></li>
-                <li><a href="./penjualan.html" class="block py-4 px-2 font-medium text-green-500 rounded hover:bg-green-500 hover:text-white transition duration-300">Penjualan</a></li>
+                <li><a href="./penjualan.html" class="block py-4 px-2 font-medium text-white font-semibold rounded bg-green-500 hover:text-white transition duration-300">Penjualan</a></li>
             </ul>
         </div>
         <script>
@@ -83,55 +83,65 @@
         <img src="/website-PETA/images/banner-penjualan.png" alt="">
     </div>
 
-    <!--Team-->
-    <div class="flex justify-between py-10 border-b">
-        <img src="/website-PETA/images/logogermas.png" class="md:h-20 lg:h-24 h-10" alt="">
-        <img src="/website-PETA/images/logo-tosstb.png" class="md:h-16 lg:h-20 h-8" alt="">
-        <img src="/website-PETA/images/logoKemenkes.png" class="md:h-14 lg:h-16 h-7" alt="">
-        <img src="/website-PETA/images/logoEndtb.png" class="md:h-14 lg:h-16 h-7" alt="">
-        <img src="/website-PETA/images/logoSobattb.png" class="md:h-16 lg:h-20 h-8" alt="">
+    <!--search-->
+    <div class="pt-2 relative mx-auto text-gray-600 flex justify-center mb-5 md:mb-10 mt-5">
+        <div>
+            <input class="border-2 border-blue-300 bg-white h-7 w-48 md:w-56 md:w-full md:h-10 px-4 pr-16 rounded-lg text-sm focus:outline-none"
+                type="search" name="search" placeholder="Search">
+            <button type="submit" class="absolute top-0 h-7 md:h-10 mt-2 rounded-md mr-4 bg-blue-300 px-4 py-3">
+                <svg class="text-gray-600 h-3 w-3 md:h-4 md:w-4 fill-current" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+                    viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve"
+                    width="512px" height="512px">
+                    <path
+                    d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
+                </svg>
+            </button>
+        </div>
     </div>
-  
+    
+    <!-- konten -->
     <div class="">
         <!--Struktur-->
-        <div class="md:grid grid-cols-2 gap-2 mb-15 bg-gradient-to-b from-cyan-300 to-cyan-100">
+        <div class="md:grid grid-cols-2 gap-2 mb-15 bg-gradient-to-b from-cyan-300 to-cyan-100 mb-5 md:mb-0">
             <!--tablet dan desktop-->
             <div class="flex justify-around md:justify-end md:hidden">
-                <img src="/website-PETA/images/penjualan1.png" class="h-64 py-10 pl-5" alt="">
+                <img src="/website-PETA/images/penjualan2.png" class="h-64 py-10" alt="">
             </div>
             
-            <div>
-                <p class="text-center font-bold ml-5 text-lg md:text-xl lg:text-3xl lg:mt-10 md:mt-10 md:text-left">Nasi Goreng Kambing</p>
-                <p class="md:text-left text-center font-semibold ml-5 md:text-xl lg:text-2xl md:mt-4 lg:mt-8 pr-5">
+            <div class="ml-5">
+                <p class="text-center font-bold text-lg md:text-xl lg:text-3xl lg:mt-10 md:text-left">Nasi Goreng Kambing</p>
+                <p class="md:text-left text-center font-semibold md:text-xl lg:text-2xl md:mt-4 lg:mt-8">
                     Lorem ipsum is a placeholder 
                     text commonly used to demonstrate the visual form of a document 
                     or a typeface without relying on meaningful content.
                 </p>
+                <p class="text-center md:text-left font-semibold md:text-xl font-bold lg:text-2xl mt-3">Rp 25000 / umit</p>
                 <div class="flex justify-around md:justify-start ">
-                    <a href="./detail-penjuala.html" class="bg-white text-cyan-500 rounded-md text-lg md:text-2xl font-semibold px-5 py-1 mt-4 md:mt-10 ml-5 shadow-md">Selengkapnya</a>
+                    <a href="./detail-penjualan.html" class="bg-white mb-4 text-cyan-500 rounded-md text-lg md:text-xl font-semibold px-5 py-1 mt-4 md:mt-6 lg:mt-10 shadow-md">Selengkapnya</a>
                 </div>
-                
             </div>
     
-            <img src="/website-PETA/images/penjualan1.png" class="hidden md:grid md:h-5/6 md:w-full lg:h-full place-items-center" alt="">
+            <img src="/website-PETA/images/penjualan2.png" class="hidden md:grid md:h-5/6 md:w-full lg:h-full place-items-center" alt="">
         </div>
 
         <!--penjualan 2-->
-        <div class="md:grid grid-cols-2 gap-2 mb-15 bg-gradient-to-b from-cyan-300 to-cyan-100">
+        <div class="md:grid grid-cols-2 mb-15 bg-gradient-to-b from-cyan-300 to-cyan-100 mb-5 md:mb-0">
             <!--tablet dan desktop-->
             <div class="flex justify-around md:justify-end md:hidden">
-                <img src="/website-PETA/images/penjualan1.png" class="h-64 py-10 pl-5" alt="">
+                <img src="/website-PETA/images/penjualan1.png" class="h-64 py-10" alt="">
             </div>
-            <img src="/website-PETA/images/penjualan2.png" class="hidden md:grid md:h-5/6 md:w-full lg:h-full place-items-center" alt="">
-            <div>
-                <p class="text-center font-bold ml-5 text-lg md:text-xl lg:text-3xl lg:mt-10 md:mt-10 md:text-left">Nasi Goreng Kambing</p>
-                <p class="md:text-left text-center font-semibold ml-5 md:text-xl lg:text-2xl md:mt-4 lg:mt-8 pr-5">
+            <img src="/website-PETA/images/penjualan1.png" class="hidden md:grid md:h-5/6 md:w-full lg:h-full place-items-center" alt="">
+            <div class="ml-5">
+                <p class="text-center font-bold text-lg md:text-xl lg:text-3xl lg:mt-10 md:text-left">Nasi Goreng Kambing</p>
+                <p class="md:text-left text-center font-semibold md:text-xl lg:text-2xl md:mt-4 lg:mt-8">
                     Lorem ipsum is a placeholder 
                     text commonly used to demonstrate the visual form of a document 
                     or a typeface without relying on meaningful content.
                 </p>
+                <p class="text-center md:text-left font-semibold md:text-xl font-bold lg:text-2xl mt-3">Rp 25000 / umit</p>
                 <div class="flex justify-around md:justify-start ">
-                    <a href="./detail-penjuala.html" class="bg-white text-cyan-500 rounded-md text-lg md:text-2xl font-semibold px-5 py-1 mt-4 md:mt-10 ml-5 shadow-md">Selengkapnya</a>
+                    <a href="./detail-penjualan.html" class="bg-white mb-4 text-cyan-500 rounded-md text-lg md:text-xl font-semibold px-5 py-1 mt-4 md:mt-6 lg:mt-10 shadow-md">Selengkapnya</a>
                 </div>
             </div>
         </div>
@@ -143,17 +153,17 @@
                 <img src="/website-PETA/images/penjualan2.png" class="h-64 py-10" alt="">
             </div>
             
-            <div>
-                <p class="text-center font-bold ml-5 text-lg md:text-xl lg:text-3xl lg:mt-10 md:mt-10 md:text-left">Nasi Goreng Kambing</p>
-                <p class="md:text-left text-center font-semibold ml-5 md:text-xl lg:text-2xl md:mt-4 lg:mt-8 pr-5">
+            <div class="ml-5">
+                <p class="text-center font-bold text-lg md:text-xl lg:text-3xl lg:mt-10 md:text-left">Nasi Goreng Kambing</p>
+                <p class="md:text-left text-center font-semibold md:text-xl lg:text-2xl md:mt-4 lg:mt-8">
                     Lorem ipsum is a placeholder 
                     text commonly used to demonstrate the visual form of a document 
                     or a typeface without relying on meaningful content.
                 </p>
+                <p class="text-center md:text-left font-semibold md:text-xl font-bold lg:text-2xl mt-3">Rp 25000 / umit</p>
                 <div class="flex justify-around md:justify-start ">
-                    <a href="./detail-penjuala.html" class="bg-white text-cyan-500 rounded-md text-lg md:text-2xl font-semibold px-5 py-1 mt-4 md:mt-10 ml-5 shadow-md">Selengkapnya</a>
+                    <a href="./detail-penjualan.html" class="bg-white mb-4 text-cyan-500 rounded-md text-lg md:text-xl font-semibold px-5 py-1 mt-4 md:mt-6 lg:mt-10 shadow-md">Selengkapnya</a>
                 </div>
-                
             </div>
     
             <img src="/website-PETA/images/penjualan3.png" class="hidden md:grid md:h-5/6 md:w-full lg:h-full place-items-center" alt="">
