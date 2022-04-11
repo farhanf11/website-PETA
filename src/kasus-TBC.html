@@ -88,13 +88,19 @@
 
     <!-- search rt -->
     <div class="pt-2 relative mx-auto text-gray-600 flex justify-center mt-5">
-        <div class="form-group border-2 py-2 rounded-md px-5">
-            <select class="form-control border-gray" name="bayar" id="bayar" aria-placeholder="">
-              <option>RT 01</option>
-              <option>RT 02</option>
-              <option>RT 03</option>
-            </select>
-        </div>
+        <div class="flex justify-center">
+            <div class="mb-3 xl:w-96">
+              <select class="form-select appearance-none block w-full px-3 py-1.5 text-base font-normal
+                text-gray-700 bg-white bg-clip-padding bg-no-repeat border border-solid border-gray-300 rounded transition
+                ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" 
+                 aria-label="Default select example font-semibold">
+                  <option selected>pilih RT</option>
+                  <option value="1">Rt 01</option>
+                  <option value="2">Rt 02</option>
+                  <option value="3">Rt 03</option>
+              </select>
+            </div>
+          </div>
         <div>
             <button type="submit" class="absolute top-0 h-10 mt-2 md:h-10 mt-2 rounded-md mr-4 bg-blue-300 px-4 py-4">
                 <svg class="text-gray-600 h-4 w-4 md:h-4 md:w-4 fill-current" xmlns="http://www.w3.org/2000/svg"
