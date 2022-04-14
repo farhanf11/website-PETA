@@ -9,6 +9,22 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <title>Galeri</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -52,7 +68,8 @@
         <div class="hidden mobile-menu">
             <ul class="">
                 <li><a href="index.html"
-                        class="block text-sm px-2 py-4 hover:bg-blue-500 font-semibold transition duration-300">Beranda</a></li>
+                        class="block text-sm px-2 py-4 hover:bg-blue-500 font-semibold transition duration-300">Beranda</a>
+                </li>
                 <li><a href="./tentang-peta.html"
                         class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">Tentang PETA</a></li>
                 <li><a href="./kasus-TBC.html"
@@ -77,7 +94,7 @@
             });
         </script>
     </nav>
-    
+
     <!--banner-->
     <section class="font-poppins pb-20 lg:pb-20">
         <div class="relativ bg-cyan-400 w-11/12 pb-[10rem] md:grid md:grid-cols-2 md:ml-8 md:pb-[5rem]">
@@ -98,80 +115,342 @@
     </section>
     <!-- END Banner -->
 
-    <!--galery-->
-    <div class="flex justify-around gap-3 px-5 py-10 md:mt-10 lg:mt-20">
-        <div>
-            <img src="/website-PETA/images/galery-1.png" class="w-36 md:w-48 lg:w-60" alt="">
+    <!-- Content -->
+    <section class="border-t">
+        <div class="flex justify-around gap-3 px-5 py-10 md:mt-10 lg:mt-20">
+            <div class="">
+                
+                <div class="flex space-x-2 justify-center">
+                    <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" data-bs-toggle="modal"
+                        data-bs-target="#exampleModalXl"
+                        class="mt-2 inline-block
+                        font-medium text-xs leading-tight uppercase rounded 
+                        shadow-md hover:shadow-xl
+                        focus:shadow-lg focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+                        <img src="/website-PETA/images/galery-1.png" class="w-36 md:w-48 lg:w-60 shadow-2xl rounded-lg" alt="">
+                    </button>
+                </div>
+                <div class="modal fade fixed lg:top-20 top-10 left-16 lg:left-20 hidden w-full h-full"
+                    id="exampleModalXl" tabindex="-1" aria-labelledby="exampleModalXlLabel" aria-modal="true"
+                    role="dialog">
+                    <div class="modal-dialog modal-xl relative w-auto pointer-events-none">
+                        <div class="lg:grid grid-cols-2 md:gap-5 bg-white rounded-md lg:pb-0 pb-10 lg:w-12/12 md:w-11/12 w-8/12">
+                            <div>
+                                <img src="/website-PETA/images/klik-galery.png" class="w-12/12" alt="">
+                            </div>
+                            <div class="pt-3 lg:pt-10 lg:px-10 px-5">
+                                <p class="font-semibold text-lg md:text-xl lg:text-2xl">Kasus TBC</p>
+                                <p class="text-justify text-xs md:text-sm lg:text-lg pt-4">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Necessitatibus vero vel, ad
+                                    distinctio illo possimus maiores totam quaerat numquam, laboriosam magni nisi ea
+                                    impedit labore quo minus, maxime harum a? no no no
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- galery 2 -->
+            <div class="">
+                <div class="flex space-x-2 justify-center">
+                    <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" data-bs-toggle="modal"
+                        data-bs-target="#exampleModalXl"
+                        class="mt-2 inline-block
+                        font-medium text-xs leading-tight uppercase rounded 
+                        shadow-md hover:shadow-xl
+                        focus:shadow-lg focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+                        <img src="/website-PETA/images/galery-1.png" class="w-36 md:w-48 lg:w-60 shadow-2xl rounded-lg" alt="">
+                    </button>
+                </div>
+                <div class="modal fade fixed lg:top-20 top-10 left-16 lg:left-20 hidden w-full h-full"
+                    id="exampleModalXl" tabindex="-1" aria-labelledby="exampleModalXlLabel" aria-modal="true"
+                    role="dialog">
+                    <div class="modal-dialog modal-xl relative w-auto pointer-events-none">
+                        <div class="lg:grid grid-cols-2 md:gap-5 bg-white rounded-md lg:pb-0 pb-10 lg:w-12/12 md:w-11/12 w-8/12">
+                            <div>
+                                <img src="/website-PETA/images/klik-galery.png" class="w-12/12" alt="">
+                            </div>
+                            <div class="pt-3 lg:pt-10 lg:px-10 px-5">
+                                <p class="font-semibold text-lg md:text-xl lg:text-2xl">Kasus TBC</p>
+                                <p class="text-justify text-xs md:text-sm lg:text-lg pt-4">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Necessitatibus vero vel, ad
+                                    distinctio illo possimus maiores totam quaerat numquam, laboriosam magni nisi ea
+                                    impedit labore quo minus, maxime harum a? no no no
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="flex space-x-2 justify-center">
+                    <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" data-bs-toggle="modal"
+                        data-bs-target="#exampleModalXl"
+                        class="mt-2 inline-block
+                        font-medium text-xs leading-tight uppercase rounded 
+                        shadow-md hover:shadow-xl
+                        focus:shadow-lg focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+                        <img src="/website-PETA/images/galery-1.png" class="w-36 md:w-48 lg:w-60 shadow-2xl rounded-lg" alt="">
+                    </button>
+                </div>
+                <div class="modal fade fixed lg:top-20 top-10 left-16 lg:left-20 hidden w-full h-full"
+                    id="exampleModalXl" tabindex="-1" aria-labelledby="exampleModalXlLabel" aria-modal="true"
+                    role="dialog">
+                    <div class="modal-dialog modal-xl relative w-auto pointer-events-none">
+                        <div class="lg:grid grid-cols-2 md:gap-5 bg-white rounded-md lg:pb-0 pb-10 lg:w-12/12 md:w-11/12 w-8/12">
+                            <div>
+                                <img src="/website-PETA/images/klik-galery.png" class="w-12/12" alt="">
+                            </div>
+                            <div class="pt-3 lg:pt-10 lg:px-10 px-5">
+                                <p class="font-semibold text-lg md:text-xl lg:text-2xl">Kasus TBC</p>
+                                <p class="text-justify text-xs md:text-sm lg:text-lg pt-4">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Necessitatibus vero vel, ad
+                                    distinctio illo possimus maiores totam quaerat numquam, laboriosam magni nisi ea
+                                    impedit labore quo minus, maxime harum a? no no no
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div>
-            <img src="/website-PETA/images/galery-1.png" class="w-36 md:w-48 lg:w-60" alt="">
+        <div class="flex justify-around gap-3 px-5 py-10">
+            <div class="">
+                <div class="flex space-x-2 justify-center">
+                    <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" data-bs-toggle="modal"
+                        data-bs-target="#exampleModalXl"
+                        class="mt-2 inline-block
+                        font-medium text-xs leading-tight uppercase rounded 
+                        shadow-md hover:shadow-xl
+                        focus:shadow-lg focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+                        <img src="/website-PETA/images/galery-1.png" class="w-36 md:w-48 lg:w-60 shadow-2xl rounded-lg" alt="">
+                    </button>
+                </div>
+                <div class="modal fade fixed lg:top-20 top-10 left-16 lg:left-20 hidden w-full h-full"
+                    id="exampleModalXl" tabindex="-1" aria-labelledby="exampleModalXlLabel" aria-modal="true"
+                    role="dialog">
+                    <div class="modal-dialog modal-xl relative w-auto pointer-events-none">
+                        <div class="lg:grid grid-cols-2 md:gap-5 bg-white rounded-md lg:pb-0 pb-10 lg:w-12/12 md:w-11/12 w-8/12">
+                            <div>
+                                <img src="/website-PETA/images/klik-galery.png" class="w-12/12" alt="">
+                            </div>
+                            <div class="pt-3 lg:pt-10 lg:px-10 px-5">
+                                <p class="font-semibold text-lg md:text-xl lg:text-2xl">Kasus TBC</p>
+                                <p class="text-justify text-xs md:text-sm lg:text-lg pt-4">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Necessitatibus vero vel, ad
+                                    distinctio illo possimus maiores totam quaerat numquam, laboriosam magni nisi ea
+                                    impedit labore quo minus, maxime harum a? no no no
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="flex space-x-2 justify-center">
+                    <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" data-bs-toggle="modal"
+                        data-bs-target="#exampleModalXl"
+                        class="mt-2 inline-block
+                        font-medium text-xs leading-tight uppercase rounded 
+                        shadow-md hover:shadow-xl
+                        focus:shadow-lg focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+                        <img src="/website-PETA/images/galery-1.png" class="w-36 md:w-48 lg:w-60 shadow-2xl rounded-lg" alt="">
+                    </button>
+                </div>
+                <div class="modal fade fixed lg:top-20 top-10 left-16 lg:left-20 hidden w-full h-full"
+                    id="exampleModalXl" tabindex="-1" aria-labelledby="exampleModalXlLabel" aria-modal="true"
+                    role="dialog">
+                    <div class="modal-dialog modal-xl relative w-auto pointer-events-none">
+                        <div class="lg:grid grid-cols-2 md:gap-5 bg-white rounded-md lg:pb-0 pb-10 lg:w-12/12 md:w-11/12 w-8/12">
+                            <div>
+                                <img src="/website-PETA/images/klik-galery.png" class="w-12/12" alt="">
+                            </div>
+                            <div class="pt-3 lg:pt-10 lg:px-10 px-5">
+                                <p class="font-semibold text-lg md:text-xl lg:text-2xl">Kasus TBC</p>
+                                <p class="text-justify text-xs md:text-sm lg:text-lg pt-4">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Necessitatibus vero vel, ad
+                                    distinctio illo possimus maiores totam quaerat numquam, laboriosam magni nisi ea
+                                    impedit labore quo minus, maxime harum a? no no no
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="flex space-x-2 justify-center">
+                    <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" data-bs-toggle="modal"
+                        data-bs-target="#exampleModalXl"
+                        class="mt-2 inline-block
+                        font-medium text-xs leading-tight uppercase rounded 
+                        shadow-md hover:shadow-xl
+                        focus:shadow-lg focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+                        <img src="/website-PETA/images/galery-1.png" class="w-36 md:w-48 lg:w-60 shadow-2xl rounded-lg" alt="">
+                    </button>
+                </div>
+                <div class="modal fade fixed lg:top-20 top-10 left-16 lg:left-20 hidden w-full h-full"
+                    id="exampleModalXl" tabindex="-1" aria-labelledby="exampleModalXlLabel" aria-modal="true"
+                    role="dialog">
+                    <div class="modal-dialog modal-xl relative w-auto pointer-events-none">
+                        <div class="lg:grid grid-cols-2 md:gap-5 bg-white rounded-md lg:pb-0 pb-10 lg:w-12/12 md:w-11/12 w-8/12">
+                            <div>
+                                <img src="/website-PETA/images/klik-galery.png" class="w-12/12" alt="">
+                            </div>
+                            <div class="pt-3 lg:pt-10 lg:px-10 px-5">
+                                <p class="font-semibold text-lg md:text-xl lg:text-2xl">Kasus TBC</p>
+                                <p class="text-justify text-xs md:text-sm lg:text-lg pt-4">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Necessitatibus vero vel, ad
+                                    distinctio illo possimus maiores totam quaerat numquam, laboriosam magni nisi ea
+                                    impedit labore quo minus, maxime harum a? no no no
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div>
-            <img src="/website-PETA/images/galery-1.png" class="w-36 md:w-48 lg:w-60" alt="">
+        <div class="flex justify-around gap-3 px-5 py-10">
+            <div class="">
+                <div class="flex space-x-2 justify-center">
+                    <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" data-bs-toggle="modal"
+                        data-bs-target="#exampleModalXl"
+                        class="mt-2 inline-block
+                        font-medium text-xs leading-tight uppercase rounded 
+                        shadow-md hover:shadow-xl
+                        focus:shadow-lg focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+                        <img src="/website-PETA/images/galery-1.png" class="w-36 md:w-48 lg:w-60 shadow-2xl rounded-lg" alt="">
+                    </button>
+                </div>
+                <div class="modal fade fixed lg:top-20 top-10 left-16 lg:left-20 hidden w-full h-full"
+                    id="exampleModalXl" tabindex="-1" aria-labelledby="exampleModalXlLabel" aria-modal="true"
+                    role="dialog">
+                    <div class="modal-dialog modal-xl relative w-auto pointer-events-none">
+                        <div class="lg:grid grid-cols-2 md:gap-5 bg-white rounded-md lg:pb-0 pb-10 lg:w-12/12 md:w-11/12 w-8/12">
+                            <div>
+                                <img src="/website-PETA/images/klik-galery.png" class="w-12/12" alt="">
+                            </div>
+                            <div class="pt-3 lg:pt-10 lg:px-10 px-5">
+                                <p class="font-semibold text-lg md:text-xl lg:text-2xl">Kasus TBC</p>
+                                <p class="text-justify text-xs md:text-sm lg:text-lg pt-4">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Necessitatibus vero vel, ad
+                                    distinctio illo possimus maiores totam quaerat numquam, laboriosam magni nisi ea
+                                    impedit labore quo minus, maxime harum a? no no no
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="flex space-x-2 justify-center">
+                    <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" data-bs-toggle="modal"
+                        data-bs-target="#exampleModalXl"
+                        class="mt-2 inline-block
+                        font-medium text-xs leading-tight uppercase rounded 
+                        shadow-md hover:shadow-xl
+                        focus:shadow-lg focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+                        <img src="/website-PETA/images/galery-1.png" class="w-36 md:w-48 lg:w-60 shadow-2xl rounded-lg" alt="">
+                    </button>
+                </div>
+                <div class="modal fade fixed lg:top-20 top-10 left-16 lg:left-20 hidden w-full h-full"
+                    id="exampleModalXl" tabindex="-1" aria-labelledby="exampleModalXlLabel" aria-modal="true"
+                    role="dialog">
+                    <div class="modal-dialog modal-xl relative w-auto pointer-events-none">
+                        <div class="lg:grid grid-cols-2 md:gap-5 bg-white rounded-md lg:pb-0 pb-10 lg:w-12/12 md:w-11/12 w-8/12">
+                            <div>
+                                <img src="/website-PETA/images/klik-galery.png" class="w-12/12" alt="">
+                            </div>
+                            <div class="pt-3 lg:pt-10 lg:px-10 px-5">
+                                <p class="font-semibold text-lg md:text-xl lg:text-2xl">Kasus TBC</p>
+                                <p class="text-justify text-xs md:text-sm lg:text-lg pt-4">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Necessitatibus vero vel, ad
+                                    distinctio illo possimus maiores totam quaerat numquam, laboriosam magni nisi ea
+                                    impedit labore quo minus, maxime harum a? no no no
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="flex space-x-2 justify-center">
+                    <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" data-bs-toggle="modal"
+                        data-bs-target="#exampleModalXl"
+                        class="mt-2 inline-block
+                        font-medium text-xs leading-tight uppercase rounded 
+                        shadow-md hover:shadow-xl
+                        focus:shadow-lg focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+                        <img src="/website-PETA/images/galery-1.png" class="w-36 md:w-48 lg:w-60 shadow-2xl rounded-lg" alt="">
+                    </button>
+                </div>
+                <div class="modal fade fixed lg:top-20 top-10 left-16 lg:left-20 hidden w-full h-full"
+                    id="exampleModalXl" tabindex="-1" aria-labelledby="exampleModalXlLabel" aria-modal="true"
+                    role="dialog">
+                    <div class="modal-dialog modal-xl relative w-auto pointer-events-none">
+                        <div class="lg:grid grid-cols-2 md:gap-5 bg-white rounded-md lg:pb-0 pb-10 lg:w-12/12 md:w-11/12 w-8/12">
+                            <div>
+                                <img src="/website-PETA/images/klik-galery.png" class="w-12/12" alt="">
+                            </div>
+                            <div class="pt-3 lg:pt-10 lg:px-10 px-5">
+                                <p class="font-semibold text-lg md:text-xl lg:text-2xl">Kasus TBC</p>
+                                <p class="text-justify text-xs md:text-sm lg:text-lg pt-4">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Necessitatibus vero vel, ad
+                                    distinctio illo possimus maiores totam quaerat numquam, laboriosam magni nisi ea
+                                    impedit labore quo minus, maxime harum a? no no no
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="flex justify-around gap-3 px-5 py-10">
-        <div>
-            <img src="/website-PETA/images/galery-1.png" class="w-36 md:w-48 lg:w-60" alt="">
-        </div>
-        <div>
-            <img src="/website-PETA/images/galery-1.png" class="w-36 md:w-48 lg:w-60" alt="">
-        </div>
-        <div>
-            <img src="/website-PETA/images/galery-1.png" class="w-36 md:w-48 lg:w-60" alt="">
-        </div>
-    </div>
-    <div class="flex justify-around gap-3 px-5 py-10">
-        <div>
-            <img src="/website-PETA/images/galery-1.png" class="w-36 md:w-48 lg:w-60" alt="">
-        </div>
-        <div>
-            <img src="/website-PETA/images/galery-1.png" class="w-36 md:w-48 lg:w-60" alt="">
-        </div>
-        <div>
-            <img src="/website-PETA/images/galery-1.png" class="w-36 md:w-48 lg:w-60" alt="">
-        </div>
-    </div>
 
-    <!--slide-->
-    <div class="flex justify-center mb-10 font-semibold">
-        <div aria-label="Page navigation example">
-          <ul class="flex list-style-none">
-            <li class="page-item"><a
-                class="page-link relative block py-1.5 px-3 rounded border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 focus:shadow-none"
-                href="./galery-3.html" aria-label="Previous">
-                <span aria-hidden="true">&laquo;</span>
-              </a></li>
-            <li class="page-item">
-                <a
-                    class="page-link relative block py-1.5 px-3 rounded border-0 
-                    bg-transparent outline-none transition-all duration-300 rounded 
-                    text-gray-800 text-gray-800 bg-gray-200 focus:shadow-none"
-                    href="./galery.html">
-                    1
-                </a>
-            </li>
-            <li class="page-item">
-                <a
-                    class="page-link relative block py-1.5 px-3 rounded border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
-                    href="./galery-2.html">
-                    2
-                </a>
-            </li>
-            <li class="page-item">
-                <a
-                    class="page-link relative block py-1.5 px-3 rounded border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
-                    href="./galery-3.html">3
-                </a>
-            </li>
-            <li class="page-item"><a
-                class="page-link relative block py-1.5 px-3 rounded border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
-                href="./galery.html" aria-label="Next">
-                <span aria-hidden="true">&raquo;</span>
-              </a></li>
-          </ul>
+        <!--slide-->
+        <div class="flex justify-center mb-10 font-semibold">
+            <div aria-label="Page navigation example">
+                <ul class="flex list-style-none">
+                    <li class="page-item"><a
+                            class="page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 focus:shadow-none"
+                            href="./galery-3.html" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a></li>
+                    <li class="page-item">
+                        <a class="page-link relative block py-1.5 px-3 rounded border-0  bg-transparent outline-none transition-all duration-300 text-gray-800 bg-gray-200 focus:shadow-none"
+                            href=".galeri.html">
+                            1
+                        </a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+                            href="./galery-2.html">
+                            2
+                        </a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+                            href="./galery-3.html">3
+                        </a>
+                    </li>
+                    <li class="page-item"><a
+                            class="page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+                            href="./galery.html" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a></li>
+                </ul>
+            </div>
         </div>
-    </div>
+        <!-- End Slide -->
+    </section>
+    <!-- END Content -->
 
     <footer class="bg-gray-200 py-7 md:flex justify-around">
         <div class="flex gap-2 justify-around">
@@ -188,6 +467,8 @@
             <p>Indonesia</p>
         </div>
     </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
 </body>
 
 </html>
